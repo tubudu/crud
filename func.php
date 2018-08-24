@@ -29,6 +29,7 @@ class ntable {
   //$del为布尔值，控制表单是否添加最后一列的删除按钮，默认false不添加，为true添加
   //$fnum为数组，控制表单的部分列不用显示，示例：array(1,2)，代表第二列和第三列不用显示
   //$filter2和$txt2同上面的$filter和$txt，增加一项复合筛选
+	//补充说明conn.php为连接数据库的文件，请自行设置，这里就不提供源码了
 	function bodyTable( $table, $sort = 0, $filter = 0, $txt = 0, $edit = 0, $del = 0, $fnum = array(), $filter2 = 0, $txt2 = 0 ) {
 		require( "conn.php" );
 		if ( $sort ) {

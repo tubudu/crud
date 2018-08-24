@@ -53,9 +53,13 @@ class ntable {
 					}
 				}
 				if ( $edit ) {
-					echo "<td>" . cbtn( btnedit, $row[ 0 ], 1, 0, edit ) . "</td>";
-				}
-				if ( $del ) {
+					echo "<td>" . cbtn( btnedit, $row[ 0 ], 1, 0, edit );
+					if ( $del ) {
+						echo "&nbsp;" . cbtn( btndel, $table . "__" . $row[ 0 ], 0, 0, eraser ) . "</td>";
+					}else{
+						echo "</td>";
+					}
+				}elseif($del){
 					echo "<td>" . cbtn( btndel, $table . "__" . $row[ 0 ], 0, 0, eraser ) . "</td>";
 				}
 				echo "</tr>";

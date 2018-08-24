@@ -63,3 +63,12 @@ class ntable {
 		}
 	}
 }
+//生成button的函数
+function cbtn($btype,$id,$data,$modalid,$icon){
+	if($data){
+		$data = "data-toggle='modal' data-target='#myModal$modalid'";
+	}else{
+		$data = "";
+	}
+	return "<button type='button' class='btn btn-info btn-xs $btype' id='$id' $data><i class='fa fa-$icon'></i></button>";
+}

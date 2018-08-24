@@ -33,3 +33,4 @@ require("func.php");<br>
 
 # 输出显示示例
 www.mystylelife.cn/crud
+测试目前还在组织中，待完善。。。

@@ -63,7 +63,8 @@ class ntable {
 		}
 	}
 }
-//生成button的函数
+//生成button的函数，这个按钮提供了一些扩展的可能，首先可以控制页面里面的modal，其次可以设置按钮的id和class，还可以更改按钮的图标
+//这里我用的是bootstrap和Fontawesome4.0
 function cbtn($btype,$id,$data,$modalid,$icon){
 	if($data){
 		$data = "data-toggle='modal' data-target='#myModal$modalid'";

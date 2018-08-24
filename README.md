@@ -31,3 +31,4 @@ $tt -> bodyTable("tabletest",0,0,0,1,1,$fnum);<br>
 $tt -> endTable();<br>
 
 # 输出显示示例
+www.mystylelife.cn/crud

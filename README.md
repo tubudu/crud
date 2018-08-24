@@ -11,7 +11,7 @@ CREATE TABLE `tabletest` (<br>
   `fname` varchar(50) NOT NULL COMMENT '2',<br>
   `lname` varchar(50) NOT NULL COMMENT '3',<br>
   `fullname` varchar(50) NOT NULL COMMENT '4',<br>
-  `info` varchar(500) NOT NULL COMMENT '5',<br>
+  `info` varchar(100) NOT NULL COMMENT '5',<br>
   `addtime` datetime NOT NULL COMMENT '6',<br>
   PRIMARY KEY (`id`)<br>
 ) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;<br>

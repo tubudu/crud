@@ -23,12 +23,13 @@ insert into `tabletest`(`id`,`fname`,`lname`,`fullname`,`info`,`addtime`) values
 
 # 初始化示例
 require("func.php");<br>
-$tt = new ntable();<br>
-$thv = array("序号","列1","列2","编辑");<br>
-$fnum = array(1,2);<br>
-$tt -> headTable($thv);<br>
-$tt -> bodyTable("tabletest",0,0,0,1,1,$fnum);<br>
-$tt -> endTable();<br>
+	$tt = new ntable();<br>
+	$thv = array("序号","列1","列2","编辑");<br>
+	$fnum = array(1,2,5);<br>
+	$tt -> headTable($thv,"table table-bordered displays");<br>
+	$tt -> bodyTable("tabletest",0,0,0,1,1,$fnum);<br>
+	$tt -> endTable();<br>
+	$tt -> headmodal(0,"编辑数据");
 
 # 输出显示示例
 www.mystylelife.cn/crud
